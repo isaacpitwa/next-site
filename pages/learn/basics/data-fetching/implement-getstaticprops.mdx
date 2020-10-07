@@ -58,7 +58,7 @@ export function getSortedPostsData() {
 }
 ```
 
-Now let's import `getSortedPostsData` inside `pages/index.js`:
+Now, let's import `getSortedPostsData` inside `pages/index.js`:
 
 ```js
 import { getSortedPostsData } from '../lib/posts'
@@ -77,7 +77,7 @@ export async function getStaticProps() {
 }
 ```
 
-By returning `allPostsData` inside the `props` object, the blog posts will be passed to the `Home` component. To see this, modify the `Home` component definition to take `{ allPostsData }`:
+By returning `allPostsData` inside the `props` object, the blog posts will be passed to the `Home` component. To see this, modify the component definition to take `{ allPostsData }`:
 
 ```jsx
 export default function Home ({ allPostsData }) { ... }
